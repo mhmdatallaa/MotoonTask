@@ -18,6 +18,7 @@ class PhotoViewViewController: UIViewController {
 
     // MARK: - Properties
     var photo: Photo!
+    var isFavorited = false
 
     
     
@@ -26,8 +27,10 @@ class PhotoViewViewController: UIViewController {
         super.viewDidLoad()
         
         indicator.layer.cornerRadius = 15
+        isFavorited = UserDefaults.standard.bool(forKey: "\(photo.id)")
         
         setImage(for: photo)
+        configureFavoritedButton()
         
     }
     
@@ -47,15 +50,24 @@ class PhotoViewViewController: UIViewController {
         }
     }
     
+    private func configureFavoritedButton() {
+        favoriteButton.image = isFavorited ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+    }
+    
     
     // MARK: - Actions
     @IBAction private func AddToFavoritedButtonClicked(_ sender: UIBarButtonItem) {
+        isFavorited.toggle()
+        UserDefaults.standard.set(isFavorited, forKey: "\(photo.id)")
         
+        if isFavorited {
+            favoriteButton.image = UIImage(systemName: "heart.fill")
+            PersistenceManager.updateWith(favorite: photo, actionType: .add) { _ in }
+        } else {
+            favoriteButton.image = UIImage(systemName: "heart")
+            PersistenceManager.updateWith(favorite: photo, actionType: .remove) { _ in }
+        }
     }
 
     
 }
-
-
-
-// MARK: - Extensions
