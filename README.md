@@ -26,14 +26,16 @@
    - Pagination
    - Persistence using UserDefaults
    - UICollectionViewCompositionalLayout
+   
+ 
 
 
-![Simulator Screen Recording - iPhone 13 Pro Max - 2023-03-30 at 01 02 48](https://user-images.githubusercontent.com/100219531/228690601-402daeaf-a8d4-4c95-96c6-5eceedbf3c27.gif)
+
 
    
 ## App Overview : 
 .
-             <img src="https://user-images.githubusercontent.com/100219531/228690601-402daeaf-a8d4-4c95-96c6-5eceedbf3c27.gif" width="400">                                                              <---------> <img src="https://user-images.githubusercontent.com/100219531/225424364-63f145dd-db79-4e14-849a-2bbf956f6baf.gif" width="400">
+             <img src="https://user-images.githubusercontent.com/100219531/228690601-402daeaf-a8d4-4c95-96c6-5eceedbf3c27.gif" width="400">                                                              <---------> <img src="https://user-images.githubusercontent.com/100219531/228691625-710996b1-9f32-427a-9d01-49d1b9220232.gif" width="400">
 \
 \
 \
