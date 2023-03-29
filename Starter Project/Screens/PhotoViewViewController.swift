@@ -28,11 +28,16 @@ class PhotoViewViewController: UIViewController {
         super.viewDidLoad()
         
         indicator.layer.cornerRadius = 15
-        isFavorited = UserDefaults.standard.bool(forKey: "\(photo.id)")
         
         setImage(for: photo)
-        configureFavoritedButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        isFavorited = UserDefaults.standard.bool(forKey: "\(photo.id)")
+        
+        configureFavoritedButton()
     }
     
     
