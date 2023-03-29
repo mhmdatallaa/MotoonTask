@@ -8,7 +8,7 @@
 import UIKit
 
 
-class PhotoViewVC: UIViewController {
+class PhotoViewViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var imageView: UIImageView!

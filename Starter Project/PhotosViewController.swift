@@ -8,7 +8,7 @@
 import UIKit
 
 
-class PhotosVC: UIViewController {
+class PhotosViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var collectionView: UICollectionView!
