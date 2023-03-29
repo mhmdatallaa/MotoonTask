@@ -54,11 +54,12 @@ class PhotosViewController: UIViewController {
     func createTwoColumnsLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
                                               heightDimension: .fractionalHeight(1))
-        
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .fractionalHeight(0.2))
+                                            heightDimension: .fractionalHeight(0.2))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+        
         let spacing = CGFloat(10)
         group.interItemSpacing = .fixed(spacing)
 

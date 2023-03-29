@@ -202,10 +202,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-UD-ZMI">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lGV-Sm-6BW">
-                                <rect key="frame" x="166.66666666666666" y="406" width="60" height="60"/>
+                                <rect key="frame" x="166.66666666666666" y="354.66666666666669" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
@@ -221,7 +221,7 @@
                             <constraint firstItem="lGV-Sm-6BW" firstAttribute="centerX" secondItem="JVc-UD-ZMI" secondAttribute="centerX" id="5WJ-C9-PSo"/>
                             <constraint firstItem="lGV-Sm-6BW" firstAttribute="centerY" secondItem="JVc-UD-ZMI" secondAttribute="centerY" id="WRU-7J-L4s"/>
                             <constraint firstItem="q7i-nb-bGs" firstAttribute="trailing" secondItem="JVc-UD-ZMI" secondAttribute="trailing" id="Wl0-DE-3bd"/>
-                            <constraint firstItem="JVc-UD-ZMI" firstAttribute="top" secondItem="q7i-nb-bGs" secondAttribute="top" id="hAA-fP-HG8"/>
+                            <constraint firstItem="JVc-UD-ZMI" firstAttribute="top" secondItem="KRg-Zg-RrJ" secondAttribute="top" id="hAA-fP-HG8"/>
                             <constraint firstItem="q7i-nb-bGs" firstAttribute="bottom" secondItem="JVc-UD-ZMI" secondAttribute="bottom" id="je2-G3-GNr"/>
                         </constraints>
                     </view>
