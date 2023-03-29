@@ -76,6 +76,7 @@ class PhotosViewController: UIViewController {
     }
     
     
+    
     // MARK: - Segue methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
