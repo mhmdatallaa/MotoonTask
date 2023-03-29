@@ -62,12 +62,18 @@ class PhotoViewViewController: UIViewController {
         
         if isFavorited {
             favoriteButton.image = UIImage(systemName: "heart.fill")
-            PersistenceManager.updateWith(favorite: photo, actionType: .add) { _ in }
+            PersistenceManager.updateWith(favorite: photo, actionType: .add) { [weak self] _ in
+                guard let self else { return }
+                self.showToast(message: "✅ Added to favorites"
+                          , font: UIFont.systemFont(ofSize: 12))
+            }
         } else {
             favoriteButton.image = UIImage(systemName: "heart")
-            PersistenceManager.updateWith(favorite: photo, actionType: .remove) { _ in }
+            PersistenceManager.updateWith(favorite: photo, actionType: .remove) { [weak self] _ in
+                guard let self else { return }
+                self.showToast(message: "❌ Removed from favorites", font: UIFont.systemFont(ofSize: 12))
+            }
         }
     }
-
     
 }
