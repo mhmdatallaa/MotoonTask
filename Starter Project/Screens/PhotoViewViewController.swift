@@ -14,11 +14,10 @@ class PhotoViewViewController: UIViewController {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var indicator: UIActivityIndicatorView!
     @IBOutlet private weak var favoriteButton: UIBarButtonItem!
-    
-    
-    
-    
+
+
     // MARK: - Properties
+    var photo: Photo!
 
     
     
@@ -26,6 +25,26 @@ class PhotoViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        indicator.layer.cornerRadius = 15
+        
+        setImage(for: photo)
+        
+    }
+    
+    
+    // MARK: - Methods
+    private func setImage(for photo: Photo) {
+        indicator.startAnimating()
+        PhotoStore.shared.fetchImage(for: photo.photoURL.full) { [weak self] result in
+            guard let self else { return }
+            switch result {
+            case let .success(image):
+                self.indicator.stopAnimating()
+                self.imageView.image = image
+            case let .failure(error):
+                debugPrint(error.localizedDescription)
+            }
+        }
     }
     
     
