@@ -23,6 +23,7 @@
 		6DADAB0E29D44DC80016E3FA /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB0D29D44DC80016E3FA /* FavoriteCell.swift */; };
 		6DADAB1129D44FF70016E3FA /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB1029D44FF70016E3FA /* PhotoDataSource.swift */; };
 		6DADAB1329D450FA0016E3FA /* FavoritePhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB1229D450FA0016E3FA /* FavoritePhotoDataSource.swift */; };
+		6DADAB1529D4634E0016E3FA /* PersisteceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB1429D4634E0016E3FA /* PersisteceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		6DADAB0D29D44DC80016E3FA /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		6DADAB1029D44FF70016E3FA /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		6DADAB1229D450FA0016E3FA /* FavoritePhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoDataSource.swift; sourceTree = "<group>"; };
+		6DADAB1429D4634E0016E3FA /* PersisteceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisteceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6DADAAFD29D4370D0016E3FA /* NetworkManager */,
+				6DADAB1429D4634E0016E3FA /* PersisteceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				6DADAAF729D4322D0016E3FA /* FavoritesViewController.swift in Sources */,
 				6DADAB0C29D44C270016E3FA /* PhotoCell.swift in Sources */,
 				6DADAB0429D440140016E3FA /* Date+EXT.swift in Sources */,
+				6DADAB1529D4634E0016E3FA /* PersisteceManager.swift in Sources */,
 				6DADAB1129D44FF70016E3FA /* PhotoDataSource.swift in Sources */,
 				02948DF029CFC76D00F82F28 /* SceneDelegate.swift in Sources */,
 				6DADAAFF29D437300016E3FA /* UsplashAPI.swift in Sources */,
