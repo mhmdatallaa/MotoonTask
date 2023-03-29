@@ -33,6 +33,6 @@ class FavoriteCell: UITableViewCell {
             }
         }
     }
-    
+
 }
 

@@ -21,6 +21,7 @@
 		6DADAB0429D440140016E3FA /* Date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB0329D440140016E3FA /* Date+EXT.swift */; };
 		6DADAB0C29D44C270016E3FA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB0B29D44C270016E3FA /* PhotoCell.swift */; };
 		6DADAB0E29D44DC80016E3FA /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB0D29D44DC80016E3FA /* FavoriteCell.swift */; };
+		6DADAB1129D44FF70016E3FA /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DADAB1029D44FF70016E3FA /* PhotoDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6DADAB0329D440140016E3FA /* Date+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EXT.swift"; sourceTree = "<group>"; };
 		6DADAB0B29D44C270016E3FA /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		6DADAB0D29D44DC80016E3FA /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		6DADAB1029D44FF70016E3FA /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		02948DEC29CFC76D00F82F28 /* Starter Project */ = {
 			isa = PBXGroup;
 			children = (
+				6DADAB0F29D44F8D0016E3FA /* DataSource */,
 				6DADAB0929D44BE00016E3FA /* Views */,
 				6DADAB0229D43FF90016E3FA /* Extensions */,
 				6DADAAF929D434A40016E3FA /* Models */,
@@ -145,6 +148,14 @@
 				6DADAB0D29D44DC80016E3FA /* FavoriteCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6DADAB0F29D44F8D0016E3FA /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6DADAB1029D44FF70016E3FA /* PhotoDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				6DADAAF729D4322D0016E3FA /* FavoritesViewController.swift in Sources */,
 				6DADAB0C29D44C270016E3FA /* PhotoCell.swift in Sources */,
 				6DADAB0429D440140016E3FA /* Date+EXT.swift in Sources */,
+				6DADAB1129D44FF70016E3FA /* PhotoDataSource.swift in Sources */,
 				02948DF029CFC76D00F82F28 /* SceneDelegate.swift in Sources */,
 				6DADAAFF29D437300016E3FA /* UsplashAPI.swift in Sources */,
 			);
