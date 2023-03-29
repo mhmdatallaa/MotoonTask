@@ -20,7 +20,7 @@ enum PersistenceManager {
     enum Key {
         static let favorites = "favorites"
     }
-    
+
     
     static func updateWith(favorite: Photo, actionType: PersistenceActionType, completion: @escaping (Error?) -> Void) {
         retrieveFavorites { result in

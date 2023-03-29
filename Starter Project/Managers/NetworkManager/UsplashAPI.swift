@@ -17,6 +17,7 @@ struct UnsplashAPI {
     
     private static let baseURLString = "https://api.unsplash.com"
     private static let clinetID = "Ahj-66mbyiRNL-GhTltHoIgGfkznNgv7SALhCOTLMaM"
+    
     static var photoURL: URL {
         return unsplashURL(endPoint: .photos, parameters: ["per_page": "30"])
     }
@@ -37,9 +38,8 @@ struct UnsplashAPI {
                 queryItems.append(item)
             }
         }
-        
-        components.queryItems = queryItems
 
+        components.queryItems = queryItems
         return components.url!
     }
     

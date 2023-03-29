@@ -15,10 +15,12 @@ class PhotosViewController: UIViewController {
     @IBOutlet private weak var indicator: UIActivityIndicatorView!
     
     
+    
     // MARK: - Properties
     let photoDataSource = PhotoDataSource()
     var page = 1
 
+    
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -26,12 +28,11 @@ class PhotosViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = photoDataSource
- 
-        indicator.layer.cornerRadius = 15
-        navigationController?.navigationBar.prefersLargeTitles = true
         
+        configureViews()
         fetchPhotos()
     }
+    
     
     
     // MARK: - Methods
@@ -50,6 +51,11 @@ class PhotosViewController: UIViewController {
         }
     }
     
+    private func configureViews() {
+        indicator.layer.cornerRadius = 15
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     
     // MARK: - Segue methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,9 +71,8 @@ class PhotosViewController: UIViewController {
         }
     }
 
-
-    
 }
+
 
 
 // MARK: - Extensions

@@ -16,9 +16,11 @@ class FavoritesViewController: UIViewController {
     @IBOutlet private weak var emptyState: UILabel!
     
     
+    
     // MARK: - Properties
     let favPhotosDataSource = FavoritePhotoDataSource()
     var isHiddenEmptyState = true
+    
     
     
     // MARK: - Life cycle
@@ -36,6 +38,7 @@ class FavoritesViewController: UIViewController {
         getFavorites()
         emptyState.text = isHiddenEmptyState ? "" : "No favorite images yet! 😶"
     }
+    
     
     
     // MARK: - Methods
@@ -57,6 +60,7 @@ class FavoritesViewController: UIViewController {
             }
         }
     }
+    
     
     
     // MARK: - Segue methods

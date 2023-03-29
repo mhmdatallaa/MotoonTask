@@ -15,6 +15,7 @@ class PhotoViewViewController: UIViewController {
     @IBOutlet private weak var indicator: UIActivityIndicatorView!
     @IBOutlet private weak var favoriteButton: UIBarButtonItem!
 
+    
 
     // MARK: - Properties
     var photo: Photo!
@@ -35,6 +36,7 @@ class PhotoViewViewController: UIViewController {
     }
     
     
+    
     // MARK: - Methods
     private func setImage(for photo: Photo) {
         indicator.startAnimating()
@@ -53,6 +55,7 @@ class PhotoViewViewController: UIViewController {
     private func configureFavoritedButton() {
         favoriteButton.image = isFavorited ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
     }
+    
     
     
     // MARK: - Actions

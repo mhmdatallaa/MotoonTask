@@ -26,8 +26,9 @@ class FavoriteCell: UITableViewCell {
             guard let self else { return }
             switch result {
             case let .success(image):
+                self.photoImageView.layer.cornerRadius = 20
                 self.photoImageView.image = image
-                self.createdDateLabel.text = photo.createdAt.changeDateFormat(to: .MMMdyyy)
+                self.createdDateLabel.text = "Created at: \(photo.createdAt.changeDateFormat(to: .MMMdyyy))"
             case let .failure(error):
                 debugPrint(error.localizedDescription)
             }
