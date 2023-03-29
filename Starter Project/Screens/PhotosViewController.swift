@@ -11,12 +11,7 @@ import UIKit
 class PhotosViewController: UIViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var collectionView: UICollectionView! {
-        didSet {
-            collectionView.delegate = self
-            collectionView.dataSource = photoDataSource
-        }
-    }
+    @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var indicator: UIActivityIndicatorView!
     
     
@@ -29,7 +24,11 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
+        collectionView.dataSource = photoDataSource
+ 
         indicator.layer.cornerRadius = 15
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         fetchPhotos()
     }
@@ -69,7 +68,6 @@ class PhotosViewController: UIViewController {
 
     
 }
-
 
 
 // MARK: - Extensions
