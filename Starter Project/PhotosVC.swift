@@ -14,5 +14,20 @@ class PhotosVC: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var indicator: UIActivityIndicatorView!
     
+    // MARK: - Properties
+
+    
+    
+    // MARK: - Life cycle
+    
+    
+    
+    // MARK: - Actions
+
+
     
 }
+
+
+
+// MARK: - Extensions
