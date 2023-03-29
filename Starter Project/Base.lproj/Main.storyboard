@@ -17,35 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="psl-pT-wKP">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psl-pT-wKP">
+                                <rect key="frame" x="3" y="103" width="387" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jIh-t3-vmj">
-                                    <size key="itemSize" width="159" height="149"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jIh-t3-vmj">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="cxS-MK-d61" customClass="PhotoCell" customModule="Starter_Project" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="149"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ajw-z0-A2O">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="193" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zln-gK-ATe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="159" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zln-gK-ATe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="193" height="187"/>
                                                     <color key="backgroundColor" systemColor="labelColor"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="742-8V-FDW" userLabel="createdDateLabel">
-                                                    <rect key="frame" x="0.0" y="128" width="159" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="742-8V-FDW" userLabel="createdDateLabel">
+                                                    <rect key="frame" x="0.0" y="187" width="193" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mwR-Pb-Fk7">
-                                                    <rect key="frame" x="69.666666666666671" y="54" width="20" height="20"/>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mwR-Pb-Fk7">
+                                                    <rect key="frame" x="86.666666666666671" y="83.666666666666671" width="20" height="20"/>
                                                 </activityIndicatorView>
                                             </subviews>
                                             <constraints>
@@ -60,17 +60,17 @@
                                                 <constraint firstItem="mwR-Pb-Fk7" firstAttribute="centerX" secondItem="zln-gK-ATe" secondAttribute="centerX" id="oLc-mR-H6W"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="159" height="149"/>
+                                        <size key="customSize" width="193" height="204"/>
                                         <connections>
                                             <outlet property="createdDate" destination="742-8V-FDW" id="VFJ-nG-yuA"/>
                                             <outlet property="indicator" destination="mwR-Pb-Fk7" id="Hf0-cX-2f7"/>
                                             <outlet property="photoImageView" destination="zln-gK-ATe" id="G0a-Ov-x7I"/>
-                                            <segue destination="BTn-A9-Dbi" kind="show" id="30j-RX-VGZ"/>
+                                            <segue destination="BTn-A9-Dbi" kind="show" identifier="showImage" id="30j-RX-VGZ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ota-DX-gfj">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ota-DX-gfj">
                                 <rect key="frame" x="161.66666666666666" y="401" width="70" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -83,10 +83,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="psl-pT-wKP" secondAttribute="trailing" id="Fjb-fh-Ghx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="psl-pT-wKP" secondAttribute="trailing" constant="3" id="Fjb-fh-Ghx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="psl-pT-wKP" secondAttribute="bottom" id="Gav-Ln-eDs"/>
                             <constraint firstItem="ota-DX-gfj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YrP-oQ-LFP"/>
-                            <constraint firstItem="psl-pT-wKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dTt-fd-wzI"/>
+                            <constraint firstItem="psl-pT-wKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="dTt-fd-wzI"/>
                             <constraint firstItem="ota-DX-gfj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l9w-sT-O28"/>
                             <constraint firstItem="psl-pT-wKP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ojH-p6-LwW"/>
                         </constraints>
@@ -295,7 +295,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dxu-TA-RDI"/>
+        <segue reference="30j-RX-VGZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>

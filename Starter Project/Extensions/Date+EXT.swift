@@ -21,11 +21,11 @@ extension Date {
         
         switch format {
         case .MMMyyy:
-            dateFormat = "MMMyyy"
+            dateFormat = "MMM yyy"
         case .MMMyy:
-            dateFormat = "MMMyy"
+            dateFormat = "MMM yy"
         case .MMMdyyy:
-            dateFormat = "MMMdyyy"
+            dateFormat = "MMMd yyy"
         }
         
         dateFormatter.dateFormat = dateFormat
