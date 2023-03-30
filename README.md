@@ -34,8 +34,7 @@
 
    
 ## App Preview : 
-.
-            <img src="https://user-images.githubusercontent.com/100219531/228690601-402daeaf-a8d4-4c95-96c6-5eceedbf3c27.gif" width="400"><----> <img src="https://user-images.githubusercontent.com/100219531/228691625-710996b1-9f32-427a-9d01-49d1b9220232.gif" width="400">
+<img src="https://user-images.githubusercontent.com/100219531/228690601-402daeaf-a8d4-4c95-96c6-5eceedbf3c27.gif" width="400"><----><img src="https://user-images.githubusercontent.com/100219531/228691625-710996b1-9f32-427a-9d01-49d1b9220232.gif" width="400">
 \
 \
 \
