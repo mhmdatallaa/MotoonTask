@@ -17,15 +17,15 @@
 
 
 ## App implementation : 
--	No 3rd Party Libraries
--	Worked with:
-   - UITabBarController & UINavigationController
-   - UICollectionView & UITableView
-   - ARC, Memory Leaks, and Capture Lists
-   - Network Call and Downloading & Caching images
-   - Pagination
-   - Persistence using UserDefaults
-   - UICollectionViewCompositionalLayout
+- No 3rd Party Libraries
+- Worked with:
+    - UITabBarController & UINavigationController
+    - UICollectionView & UITableView
+    - ARC, Memory Leaks, and Capture Lists
+    - Network Call and Downloading & Caching images
+    - Pagination
+    - Persistence using UserDefaults
+    - UICollectionViewCompositionalLayout
    
  
 
