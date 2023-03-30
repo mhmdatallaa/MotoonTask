@@ -26,10 +26,7 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = photoDataSource
-        collectionView.collectionViewLayout = createTwoColumnsLayout()
-        configureViews()
+        setUP()
         fetchPhotos()
     }
     
@@ -71,7 +68,10 @@ class PhotosViewController: UIViewController {
         return layout
     }
     
-    private func configureViews() {
+    private func setUP() {
+        collectionView.delegate = self
+        collectionView.dataSource = photoDataSource
+        collectionView.collectionViewLayout = createTwoColumnsLayout()
         indicator.layer.cornerRadius = 15
         navigationController?.navigationBar.prefersLargeTitles = true
     }
