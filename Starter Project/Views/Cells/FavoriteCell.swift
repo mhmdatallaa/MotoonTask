@@ -13,6 +13,11 @@ class FavoriteCell: UITableViewCell {
     
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var createdDateLabel: UILabel!
+    @IBOutlet private weak var indicator: UIActivityIndicatorView! {
+        didSet {
+            indicator.layer.cornerRadius = 10
+        }
+    }
     
     
     override func prepareForReuse() {
@@ -22,8 +27,10 @@ class FavoriteCell: UITableViewCell {
     
     
     func set(for photo: Photo) {
+        indicator.startAnimating()
         PhotoStore.shared.fetchImage(for: photo.photoURL.regular) { [weak self] result in
             guard let self else { return }
+            self.indicator.stopAnimating()
             switch result {
             case let .success(image):
                 self.photoImageView.layer.cornerRadius = 20

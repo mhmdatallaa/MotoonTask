@@ -148,6 +148,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="createdDateLabel" destination="5EI-ut-UqH" id="RMM-bA-cJQ"/>
+                                            <outlet property="indicator" destination="mXq-VD-HM0" id="FPY-Ex-Jqp"/>
                                             <outlet property="photoImageView" destination="WJD-aa-Iez" id="IOi-48-Awi"/>
                                             <segue destination="BTn-A9-Dbi" kind="show" identifier="showFavoriteImage" id="Dxu-TA-RDI"/>
                                         </connections>
@@ -314,7 +315,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="30j-RX-VGZ"/>
+        <segue reference="Dxu-TA-RDI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
