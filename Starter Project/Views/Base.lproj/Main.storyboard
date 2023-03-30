@@ -125,8 +125,9 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJD-aa-Iez">
                                                     <rect key="frame" x="8" y="8" width="361" height="450"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-ut-UqH" userLabel="createdDateLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EI-ut-UqH" userLabel="createdDateLabel">
                                                     <rect key="frame" x="28" y="463" width="329" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ng8-W9-5Dv"/>
@@ -135,11 +136,16 @@
                                                     <color key="textColor" systemColor="systemGray2Color"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mXq-VD-HM0">
+                                                    <rect key="frame" x="170" y="214.66666666666666" width="37" height="37"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="5EI-ut-UqH" firstAttribute="leading" secondItem="WJD-aa-Iez" secondAttribute="leading" constant="20" id="711-H2-J40"/>
+                                                <constraint firstItem="mXq-VD-HM0" firstAttribute="centerY" secondItem="WJD-aa-Iez" secondAttribute="centerY" id="9oZ-cf-Moj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="5EI-ut-UqH" secondAttribute="trailing" id="Er3-k3-9lo"/>
                                                 <constraint firstItem="5EI-ut-UqH" firstAttribute="top" secondItem="WJD-aa-Iez" secondAttribute="bottom" constant="5" id="FiE-J6-NTY"/>
+                                                <constraint firstItem="mXq-VD-HM0" firstAttribute="centerX" secondItem="WJD-aa-Iez" secondAttribute="centerX" id="G0r-zF-Lcy"/>
                                                 <constraint firstAttribute="trailing" secondItem="WJD-aa-Iez" secondAttribute="trailing" constant="8" id="S4q-x0-Slr"/>
                                                 <constraint firstItem="WJD-aa-Iez" firstAttribute="top" secondItem="src-fE-0Hz" secondAttribute="top" constant="8" id="U73-JZ-UdS"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5EI-ut-UqH" secondAttribute="bottom" constant="5" id="ZS2-iu-tpM"/>
@@ -155,15 +161,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mXq-VD-HM0">
-                                <rect key="frame" x="161.66666666666666" y="401" width="70" height="70"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="xXM-A0-Uka"/>
-                                    <constraint firstAttribute="width" secondItem="mXq-VD-HM0" secondAttribute="height" multiplier="1:1" id="y1g-8B-YZT"/>
-                                </constraints>
-                            </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GE-sY-axm" userLabel="EmptyStateLabel">
                                 <rect key="frame" x="196.66666666666666" y="436" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -174,14 +171,12 @@
                         <viewLayoutGuide key="safeArea" id="Ahy-Xx-IdW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mXq-VD-HM0" firstAttribute="centerX" secondItem="Ahy-Xx-IdW" secondAttribute="centerX" id="1ky-BP-7pi"/>
                             <constraint firstItem="Ahy-Xx-IdW" firstAttribute="bottom" secondItem="AM8-Nk-CVr" secondAttribute="bottom" id="HL6-35-LZP"/>
                             <constraint firstItem="3GE-sY-axm" firstAttribute="centerX" secondItem="Ahy-Xx-IdW" secondAttribute="centerX" id="Li5-KV-g8A"/>
                             <constraint firstItem="3GE-sY-axm" firstAttribute="centerY" secondItem="Ahy-Xx-IdW" secondAttribute="centerY" id="mXu-WE-LMi"/>
                             <constraint firstItem="AM8-Nk-CVr" firstAttribute="leading" secondItem="Ahy-Xx-IdW" secondAttribute="leading" constant="8" id="nMZ-Xr-bb6"/>
                             <constraint firstItem="Ahy-Xx-IdW" firstAttribute="trailing" secondItem="AM8-Nk-CVr" secondAttribute="trailing" constant="8" id="tZG-gO-a6A"/>
                             <constraint firstItem="AM8-Nk-CVr" firstAttribute="top" secondItem="Ahy-Xx-IdW" secondAttribute="top" constant="16" id="tr9-EO-Jne"/>
-                            <constraint firstItem="mXq-VD-HM0" firstAttribute="centerY" secondItem="Ahy-Xx-IdW" secondAttribute="centerY" id="wva-Pe-3RI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="gEU-Y7-f8v"/>
