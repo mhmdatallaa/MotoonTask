@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="1977.8625954198471" y="-35.211267605633807"/>
         </scene>
-        <!--Favorites-->
+        <!--Favorites ❤️-->
         <scene sceneID="3Yc-ZI-JPw">
             <objects>
                 <viewController id="QnL-qb-mz7" customClass="FavoritesViewController" customModule="Starter_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,7 +179,7 @@
                             <constraint firstItem="AM8-Nk-CVr" firstAttribute="top" secondItem="Ahy-Xx-IdW" secondAttribute="top" constant="16" id="tr9-EO-Jne"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Favorites" id="gEU-Y7-f8v"/>
+                    <navigationItem key="navigationItem" title="Favorites ❤️" id="gEU-Y7-f8v"/>
                     <connections>
                         <outlet property="emptyState" destination="3GE-sY-axm" id="0uG-xe-0XS"/>
                         <outlet property="tableView" destination="AM8-Nk-CVr" id="bdn-ay-Y82"/>
@@ -264,18 +264,18 @@
             </objects>
             <point key="canvasLocation" x="938.16793893129773" y="-34.507042253521128"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Favorites-->
         <scene sceneID="3NI-Xq-NXW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHd-gy-38Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Qwr-HO-rdj"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="Qwr-HO-rdj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sPT-qm-M0g">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <color key="tintColor" systemColor="systemPurpleColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" systemColor="systemRedColor"/>
+                            <color key="textColor" systemColor="systemPurpleColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -314,6 +314,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="square.grid.3x3.fill" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
