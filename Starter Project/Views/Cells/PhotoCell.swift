@@ -23,7 +23,7 @@ class PhotoCell: UICollectionViewCell {
     
     func set(for photo: Photo) {
         indicator.startAnimating()
-        PhotoStore.shared.fetchImage(for: photo.photoURL.thumb) { [weak self] result in
+        PhotoStore.shared.fetchImage(for: photo.url.thumb) { [weak self] result in
             guard let self = self else { return }
             
             switch result {

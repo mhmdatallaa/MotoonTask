@@ -45,7 +45,7 @@ class PhotoViewViewController: UIViewController {
     // MARK: - Methods
     private func setImage(for photo: Photo) {
         indicator.startAnimating()
-        PhotoStore.shared.fetchImage(for: photo.photoURL.regular) { [weak self] result in
+        PhotoStore.shared.fetchImage(for: photo.url.regular) { [weak self] result in
             guard let self else { return }
             switch result {
             case let .success(image):

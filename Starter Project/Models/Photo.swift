@@ -11,12 +11,12 @@ import Foundation
 struct Photo: Codable, Hashable {
     let id: String
     let createdAt: Date
-    let photoURL: PhotoURL
+    let url: PhotoURL
     
     enum CodingKeys: String, CodingKey {
         case id
         case createdAt = "created_at"
-        case photoURL = "urls"
+        case url = "urls"
     }
 }
 

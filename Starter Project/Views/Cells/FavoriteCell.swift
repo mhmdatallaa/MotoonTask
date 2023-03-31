@@ -28,7 +28,7 @@ class FavoriteCell: UITableViewCell {
     
     func set(for photo: Photo) {
         indicator.startAnimating()
-        PhotoStore.shared.fetchImage(for: photo.photoURL.regular) { [weak self] result in
+        PhotoStore.shared.fetchImage(for: photo.url.regular) { [weak self] result in
             guard let self else { return }
             self.indicator.stopAnimating()
             switch result {
