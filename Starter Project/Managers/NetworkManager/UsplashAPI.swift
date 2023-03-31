@@ -16,7 +16,7 @@ enum EndPoint: String {
 struct UnsplashAPI {
     
     private static let baseURLString = "https://api.unsplash.com"
-    private static let clinetID = "Ahj-66mbyiRNL-GhTltHoIgGfkznNgv7SALhCOTLMaM"
+    private static let clinetID = "WVJpzEm5ksp04AOXj0GUJTwxAkPnP0xz0GefGiTL5Us"
     
     static var photoURL: URL {
         return unsplashURL(endPoint: .photos, parameters: ["per_page": "30"])
